@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Card</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box formInputs">
+            <h3 class="title">Student Details</h3>
+            <form>
+                <div class="fields">
+                    <label for="schoolName">School Name :</label>
+                    <input id="schoolName">
+                </div>
+                <div class="fields">
+                    <label for="studentName">Student Name :</label>
+                    <input id="studentName">
+                </div>
+                <div class="fields">
+                    <label for="dateOfBirth">Date of Birth :</label>
+                    <input id="dateOfBirth">
+                </div>
+                <div class="fields">
+                    <label for="rollNumber">RollNumber :</label>
+                    <input id="rollNumber" type="number">
+                </div>
+                <div class="fields">
+                    <label for="contactNumber">Contact Number :</label>
+                    <input id="contactNumber" type="number">
+                </div>
+                <div class="fields res">
+                    <button class="btn" type="button" onclick="updateCard()">Submit</button>
+                    <button class="btn" type="reset" onclick="clearAll()">Clear All</button>
+                </div>
+            </form>
+        </div>
+        <div class="box">
+            <h2 class="title" id="SchoolNameVal">School Name </h2>
+            <div class="image">
+                <img src="download.png" alt="student-image">
+            </div>
+            <div class="fields">
+                <label> Student Name :</label>
+                <label id="StudentNameVal"> </label>
+            </div>
+            <div class="fields">
+                <label> Date Of Birth :</label>
+                <label id="DateofBirthVal"> </label>
+            </div>
+            <div class="fields">
+                <label> Roll Number :</label>
+                <label id="RollnoVal"> </label>
+            </div>
+            <div class="fields">
+                <label> Contact Number :</label>
+                <label id="contactNumberVal"> </label>
+            </div>
+            <button class="btn Print" type="button"
+            onclick="printIdCard()">Print ID Card</button>
+
+        </div>
+    </div>
+</body>
+
+</html>
